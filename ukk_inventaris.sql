@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 12, 2025 at 03:00 PM
+-- Generation Time: Feb 05, 2025 at 03:56 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ukk_inventaris`
+-- Database: `ukk_kasir`
 --
 
 -- --------------------------------------------------------
@@ -41,8 +41,7 @@ CREATE TABLE `detilpembelian` (
 
 INSERT INTO `detilpembelian` (`DetailD`, `PembelianID`, `ProdukID`, `JumlahProduk`, `Subtotal`) VALUES
 (9, 10, 8, 10, 100000.00),
-(10, 11, 9, 5, 25000.00),
-(11, 12, 9, 5, 25000.00);
+(10, 11, 9, 5, 25000.00);
 
 -- --------------------------------------------------------
 
@@ -64,12 +63,7 @@ CREATE TABLE `detilpenjualan` (
 
 INSERT INTO `detilpenjualan` (`DetailID`, `PenjualanID`, `ProdukID`, `JumlahProduk`, `Subtotal`) VALUES
 (23, 35, 8, 1, 10000.00),
-(24, 35, 9, 1, 5000.00),
-(25, 36, 9, 1, 5000.00),
-(26, 36, 9, 1, 5000.00),
-(27, 37, 9, 1, 5000.00),
-(28, 37, 9, 1, 5000.00),
-(29, 38, 9, 1, 5000.00);
+(24, 35, 9, 1, 5000.00);
 
 -- --------------------------------------------------------
 
@@ -111,8 +105,7 @@ CREATE TABLE `pembelian` (
 
 INSERT INTO `pembelian` (`PembelianID`, `TanggalPembelian`, `TotalHarga`, `SupplierID`) VALUES
 (10, '2024-02-07', 100000.00, 3),
-(11, '2024-02-07', 25000.00, 4),
-(12, '2025-02-06', 25000.00, 3);
+(11, '2024-02-07', 25000.00, 4);
 
 -- --------------------------------------------------------
 
@@ -132,10 +125,7 @@ CREATE TABLE `penjualan` (
 --
 
 INSERT INTO `penjualan` (`PenjualanID`, `TanggalPenjualan`, `TotalHarga`, `PelangganID`) VALUES
-(35, '2024-02-07', 15000.00, 370914351),
-(36, '2025-02-05', 10000.00, 221709287),
-(37, '2025-02-05', 10000.00, 221709287),
-(38, '2025-02-06', 5000.00, 221709287);
+(35, '2024-02-07', 15000.00, 370914351);
 
 -- --------------------------------------------------------
 
@@ -267,25 +257,25 @@ ALTER TABLE `supplier`
 -- AUTO_INCREMENT for table `detilpembelian`
 --
 ALTER TABLE `detilpembelian`
-  MODIFY `DetailD` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `DetailD` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `detilpenjualan`
 --
 ALTER TABLE `detilpenjualan`
-  MODIFY `DetailID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `DetailID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `pembelian`
 --
 ALTER TABLE `pembelian`
-  MODIFY `PembelianID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `PembelianID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `penjualan`
 --
 ALTER TABLE `penjualan`
-  MODIFY `PenjualanID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `PenjualanID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `petugas`

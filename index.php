@@ -366,7 +366,7 @@ if ($resultpetugas) {
                   </div>
                   <div class="card mt-3">
                         <div class="card-body">
-                              <p class="text-center fw-bold mb-0">&copy; LSP 2025 RPL By: Rahsya Benova Akbar </p>
+                              <p class="text-center fw-bold mb-0">&copy;COBA AKOWKOAKOWA </p>
                         </div>
                   </div>
             </div>

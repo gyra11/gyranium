@@ -7,6 +7,8 @@ include("../nav/navbar.php");
 <div class="container ">
     <div class="card mt-2">
         <div class="card-body">
+        <a href="cetak_produk.php" class="btn btn-outline-primary">Cetak PDF</a>
+
             <table class="table table-bordered table-responsive align-midle">
                 <thead>
                     <tr>

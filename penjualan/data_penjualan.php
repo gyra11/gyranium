@@ -9,6 +9,7 @@ include("../nav/navbar.php");
 <div class="container ">
     <div class="card mt-2">
         <div class="card-body">
+        <a href="cetak_penjualan.php" class="btn btn-outline-primary">Cetak PDF</a>
             <table class="table table-bordered table-responsive align-midle">
                 <thead>
                     <tr>
@@ -51,9 +52,11 @@ include("../nav/navbar.php");
                                 ?>
                             </td>
                             <td>
-                                <a href="detail_penjualan.php?id=<?php echo $row['PenjualanID']; ?>" class="btn btn-outline-success">Detail</a>
-                                <a href="hapus_penjualan.php?id=<?php echo $row['PenjualanID']; ?>" class="btn btn-outline-danger">Hapus</a>
-                            </td>
+    <a href="detail_penjualan.php?id=<?php echo $row['PenjualanID']; ?>" class="btn btn-outline-success">Detail</a>
+    <a href="hapus_penjualan.php?id=<?php echo $row['PenjualanID']; ?>" class="btn btn-outline-danger">Hapus</a>
+    <a href="cetak_struk.php?id=<?php echo $row['PenjualanID']; ?>" class="btn btn-outline-primary">Cetak Struk</a>
+</td>
+
                         </tr>
                         <div class="modal fade" id="edit_Pelanggan<?php echo $row['PenjualanID']; ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog">
